@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenido en desarrollo</title>
-</head>
-<body>
-    <div>Contenido en desarrollo</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crunchyroll</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <label for="menu">
+                <figure class="icon-menu">
+                    <img src="./assets/menú.svg" alt="Icono menu">
+                </figure>
+            </label>
+            <input type="checkbox" id="menu">
+            
+            <figure class="smallIcon-container">
+                <img src="./assets/logo-pequeño.svg" alt="Logo plataforma Crunchyroll">
+            </figure>
+
+            <figure class="largeIcon-container">
+                <img src="./assets/crunchyroll-logo.svg" alt="Logo plataforma Crunchyroll">
+            </figure>
+
+            <nav class="nav-container">
+                <ul class="left-nav">
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Manga</a></li>
+                    <li><a href="#">Juegos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li>
+                        <a href="#">
+                            <figure class="icon-container">
+                                <img src="./assets/search.svg" alt="Icono buscar">
+                            </figure>
+                        </a>
+                    <li>
+                        <a href="#">
+                            <figure class="icon-container">
+                                <img src="./assets/watchlist.svg" alt="Icono mi lista">
+                            </figure>
+                        </a>
+                    <li>
+                        <a href="#">
+                            <figure class="icon-container">
+                                <img src="./assets/icon-user.svg" alt="Icono usuario">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="carousel-container">
+                <figure class="carousel">
+                    <img src="https://static.crunchyroll.com/fms/portrait_poster/426x639/09ee1b15-896a-4619-be52-e8d4622d8b58.png" alt="Imagen Demon Slayer">
+                    <img src="https://static.crunchyroll.com/fms/portrait_poster/426x639/e7a43472-29b5-46d5-93ec-e4581c3b79c8.png" alt="Imagen Jujutsu Kaisen">
+                    <img src="https://static.crunchyroll.com/fms/portrait_poster/426x639/f0eabdcf-240a-48b4-885e-547ce4fdaa3e.png" alt="Imangen One Piece">
+                </figure>
+            </section>
+
+            <h1>¡Nuestro mejor anime!</h1>
+
+            <section class="info-container">
+                
+                <figure class="info-images">
+                    <img src="./assets/jujutsu-kaisen.jpg" alt="Imagen Jujutsu Kaisen">
+                </figure>
+                <div>
+                    <h3>Jujutsu Kaisen</h3>
+                    <p>
+                        La historia gira en torno al estudiante Yūji Itadori, quien se une a una organización secreta de hechiceros para matar a una poderosa maldición llamada Ryōmen Sukuna tras convertirse en su anfitrión.
+                    </p>
+                    <a href="#">COMENZAR A VER T1 E1</a>
+                </div>
+                
+            </section>
+
+            <section class="info-container">
+                <figure class="info-images">
+                    <img src="./assets/demon-slayer-.jpg" alt="Imagen Demon Slayer">
+                </figure>
+                <div>
+                    <h3>Demon Slayer</h3>
+                    <p>
+                        Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana la vida vendiendo carbón, descubre un día que su familia ha sido asesinada por un demonio.
+                    </p>
+                    <a href="#">COMENZAR A VER T1 E1</a>
+                </div>
+            </section>
+
+            <section class="info-container">
+                <figure class="info-images">
+                    <img src="./assets/one-piece-.jpg" alt="Imagen One Piece">
+                </figure>
+                <div>
+                    <h3>One Piece</h3>
+                    <p>
+                        Monkey D. Luffy se niega a que nadie se interponga en su camino para convertirse en Rey de los Piratas. Se lanza a sucar los mares y se convertirá en un capitán dispuesto a no darse por vencido jamás hasta hacerse con el mayor tesoro de la historia: el legendario One Piece.
+                    </p>
+                    <a href="#">COMENZAR A VER T1 E1</a>
+                </div>
+            </section>
+
+            <aside class="aside">
+                <h2>Top 10 anime Crunchyroll</h2>
+                <ol>
+                    <li>Shingeki no Kyojin</li>
+                    <li>Demon Slayer</li>
+                    <li>One Piece</li>
+                    <li>Jujutsu Kaisen</li>
+                    <li>My Hero Academia</li>
+                    <li>Chainsaw Man</li>
+                    <li>Naruto Shippuden</li>
+                    <li>Jojo's Bizarre Adventure</li>
+                    <li>Tokyo Revengers</li>
+                    <li>Hunter X Hunter</li>
+                </ol>
+            </aside>
+        </main>
+        
+        <footer class="footer">
+            <a href="#">
+                <h4>Navegación</h4>
+            </a>
+            <a href="./form.html">
+                <h4>Conecta con nosotros</h4>
+            </a>
+            <a href="#">
+                <h4>Crunchyroll</h4>
+            </a>
+        </footer>
+        
+    </body>
 </html>

@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #23252b;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+input {
+    display: none;
+}
+
+.left-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+}
+
+input:checked ~ .nav-container .left-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    height: 50vh;
+    gap: 10px;
+}
+
+.left-nav li {
+    margin: auto;
+}
+
+.left-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.smallIcon-container {
+    display: flex;
+    align-items: center;
+    padding:  0 18px;
+}
+
+.largeIcon-container {
+    display: none;
+}
+
+.nav-container {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.right-nav {
+    display: flex;
+    list-style: none;
+}
+
+.icon-container {
+    padding: 0 13px;
+}
+
+.icon-container img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* La propiedad overflow-x se establece en auto para habilitar el scroll horizontal si las imágenes superan el ancho del contenedor. */
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+}
+
+.carousel img {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.info-container {
+    padding: 5px;
+    background-color: black;
+}
+
+.info-container h3, p {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    background-color: #23252b;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.info-container a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    padding: 5px 0;
+    margin: 10px 30px;
+    border-radius: 10px;
+}
+
+.info-images img {
+    width: 100%;
+    height: 100%;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.aside h2 {
+    margin: 10px 0;
+}
+
+.footer {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(50,50,56,1) 35%);
+    padding: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a h4:hover {
+    background: rgb(20, 20, 20);
+}
+
+.footer h4 {
+    color: white;
+    margin: 40px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    .smallIcon-container {
+        display: none;
+    }
+
+    .largeIcon-container {
+        display: flex;
+        align-items: center;
+        padding:  0 18px;
+    }
+
+    .largeIcon-container img {
+        width: 136px;
+        height: 24px;
+    }
+
+    .info-container {
+        padding: 40px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    label {
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .left-nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: #23252b;
+    }
+
+    .left-nav li {
+        padding: 0 30px;
+    }
+
+    .right-nav  {
+        margin-left: auto;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carousel img {
+        flex: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .info-container {
+        display: flex;
+    }
+
+    .info-images img {
+        width: 500px;
+    }
+
+    .info-container div {
+        margin: auto;
+        padding: 10px;
+    }
+
+    .info-container div h3 {
+        margin: 10px;
+    }
+
+    .info-container div a {
+        margin: 40px;
+    }
+
+    .footer h4 {
+        padding: 20px;
+    }
+}
+
+

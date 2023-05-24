@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crunchyroll</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles2.css">
+    </head>
+    <body>
+        <header class="header">
+            <label for="menu">
+                <figure class="icon-menu">
+                    <img src="./assets/menú.svg" alt="Icono menu">
+                </figure>
+            </label>
+            <input type="checkbox" id="menu">
+            
+            <figure class="smallIcon-container">
+                <img src="./assets/logo-pequeño.svg" alt="Logo plataforma Crunchyroll">
+            </figure>
+
+            <figure class="largeIcon-container">
+                <img src="./assets/crunchyroll-logo.svg" alt="Logo plataforma Crunchyroll">
+            </figure>
+
+            <nav class="nav-container">
+                <ul class="left-nav">
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Manga</a></li>
+                    <li><a href="#">Juegos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li>
+                        <a href="#">
+                            <figure class="icon-container">
+                                <img src="./assets/search.svg" alt="Icono buscar">
+                            </figure>
+                        </a>
+                    <li>
+                        <a href="#">
+                            <figure class="icon-container">
+                                <img src="./assets/watchlist.svg" alt="Icono mi lista">
+                            </figure>
+                        </a>
+                    <li>
+                        <a href="#">
+                            <figure class="icon-container">
+                                <img src="./assets/icon-user.svg" alt="Icono usuario">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <h1>Suscríbite para más información de nuestras membresías</h1>
+
+            <section class="form">
+
+                <fieldset>
+                    
+                    <form class="form-container" id="suscribirse">
+                        <label for="nombre">Nombre:
+                            <input type="text" id="nombre" placeholder="Nombre" name="nombre">
+                        </label>
+                        <label for="apellidos">Apellidos:
+                            <input type="text" id="apellidos" placeholder="Apellidos">
+                        </label>
+                        <label for="correo">Email:
+                            <input type="email" id="correo" placeholder="Correo">
+                        </label>
+                        <label for="telefono">Celular:
+                            <input type="number" id="telefono" placeholder="Teléfono">
+                        </label>
+                        <label for="ubicacion">Ubicación:
+                            <select name="Ubicacion" id="ubicacion">
+                                <option value="Colombia">Colombia</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="México">México</option>
+                            </select>
+                        </label>
+                        <label for="politica">
+                            <input type="checkbox" id="politica">
+                            He leído y acepto la Política de privacidad
+                        </label>
+                        <button type="submit" id="boton">SUSCRÍBETE</button>
+                    </form>
+
+                </fieldset>
+
+            </section>
+
+        </main>     
+
+        <footer class="footer">
+            <a href="#">
+                <h4>Navegación</h4>
+            </a>
+            <a href="./form.html">
+                <h4>Crunchyroll</h4>
+            </a>
+            <a href="#">
+                <h4>Cuenta</h4>
+            </a>
+        </footer>
+
+        <script src="./assets/form.js"></script>
+    </body>
+</html>
