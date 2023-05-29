@@ -20,11 +20,15 @@
             <input type="checkbox" id="menu">
             
             <figure class="smallIcon-container">
-                <img src="./assets/logo-pequeño.svg" alt="Logo plataforma Crunchyroll">
+                <a href="./index.html">
+                    <img src="./assets/logo-pequeño.svg" alt="Logo plataforma Crunchyroll">
+                </a>
             </figure>
 
             <figure class="largeIcon-container">
-                <img src="./assets/crunchyroll-logo.svg" alt="Logo plataforma Crunchyroll">
+                <a href="./index.html">
+                    <img src="./assets/crunchyroll-logo.svg" alt="Logo plataforma Crunchyroll">
+                </a>
             </figure>
 
             <nav class="nav-container">
@@ -59,28 +63,25 @@
         </header>
 
         <main>
-
             <h1>Suscríbite para más información de nuestras membresías</h1>
-
             <section class="form">
-
                 <fieldset>
-                    
-                    <form class="form-container" id="suscribirse">
-                        <label for="nombre">Nombre:
-                            <input type="text" id="nombre" placeholder="Nombre" name="nombre">
+                    <form class="form-container" id="formulario">
+                        <label for="nombre" id="lnombre">Nombre:
+                            <input type="text" id="nombre" placeholder="Nombre" class="input">
                         </label>
-                        <label for="apellidos">Apellidos:
-                            <input type="text" id="apellidos" placeholder="Apellidos">
+                        <label for="apellidos" id="lapellidos">Apellidos:
+                            <input type="text" id="apellidos" placeholder="Apellidos" class="input">
                         </label>
-                        <label for="correo">Email:
-                            <input type="email" id="correo" placeholder="Correo">
+                        <label for="correo" id="lcorreo">Email:
+                            <input type="email" id="correo" placeholder="Correo" class="input">
                         </label>
-                        <label for="telefono">Celular:
-                            <input type="number" id="telefono" placeholder="Teléfono">
+                        <label for="telefono" id="ltelefono">Celular:
+                            <input type="number" id="telefono" placeholder="Teléfono" class="input">
                         </label>
-                        <label for="ubicacion">Ubicación:
-                            <select name="Ubicacion" id="ubicacion">
+                        <label for="ubicacion" id="lubicacion">Ubicación:
+                            <select name="Ubicacion" id="ubicacion" class="input">
+                                <option value="" disabled selected>Selecciona una ubicación</option>
                                 <option value="Colombia">Colombia</option>
                                 <option value="Venezuela">Venezuela</option>
                                 <option value="Ecuador">Ecuador</option>
@@ -92,24 +93,22 @@
                                 <option value="México">México</option>
                             </select>
                         </label>
-                        <label for="politica">
+                        <label for="politica" class="check">
                             <input type="checkbox" id="politica">
                             He leído y acepto la Política de privacidad
                         </label>
                         <button type="submit" id="boton">SUSCRÍBETE</button>
+                        <p class="validation" id="validacion"></p>
                     </form>
-
                 </fieldset>
-
             </section>
-
         </main>     
 
         <footer class="footer">
             <a href="#">
                 <h4>Navegación</h4>
             </a>
-            <a href="./form.html">
+            <a href="./index.html">
                 <h4>Crunchyroll</h4>
             </a>
             <a href="#">
